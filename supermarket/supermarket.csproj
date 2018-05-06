@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7B59412-E3D6-4935-8B83-B53300020C6D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>supermarket</RootNamespace>
+    <AssemblyName>supermarket</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="account.aspx" />
+    <Content Include="account_settings.aspx" />
+    <Content Include="admin\account_settings.aspx" />
+    <Content Include="admin\canceledorder.aspx" />
+    <Content Include="admin\categories.aspx" />
+    <Content Include="admin\category_add.aspx" />
+    <Content Include="admin\category_delete.aspx" />
+    <Content Include="admin\category_update.aspx" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\orders.aspx" />
+    <Content Include="admin\products.aspx" />
+    <Content Include="admin\product_add.aspx" />
+    <Content Include="admin\product_delete.aspx" />
+    <Content Include="admin\product_edit.aspx" />
+    <Content Include="admin\single_order.aspx" />
+    <Content Include="admin\single_user_view.aspx" />
+    <Content Include="admin\userinfo.aspx" />
+    <Content Include="App_Data\supermarket.mdf" />
+    <Content Include="App_Data\supermarket_log.ldf">
+      <DependentUpon>supermarket.mdf</DependentUpon>
+    </Content>
+    <Content Include="cart.aspx" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\a\skonhed_1500537029__49726.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\b\bluedio_1500536354__53632.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\b\headwear_1500536476__15682.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\b\ingelon_1500536618__15850.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\b\yayi jewelryfine_1500537244__28084.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\c\huawei_1500536597__89404.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\d\deek - robot_1500536422__09651.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\d\surom_1500537038__83727.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\d\tbj_1500537182__16122.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\e\chanleevi_1500536420__58359.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\e\pixlink_1500536937__44019.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\e\rcyago_1500536972__07414.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\f\by nanda_1500536376__08405.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\f\imice_1500536600__48205.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\g\binful_1500536321__98706.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\h\jepod_1500536626__52226.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\h\jisoncase_1500536647__37507.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\h\tomy day_1500537201__82859.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\i\celadon_1500536385__42712.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\i\luggage_1500536713__74244.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\i\mocute_1500536769__37090.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\i\podofo_1500536943__53459.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\i\rockcow_1500536980__70821.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\i\switautoid_1500537159__01278.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\j\mercury_1500536761__13845.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\j\muchuan_1500537346__15475.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\j\szvivid_1500537169__90603.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\j\tivdio_1500537195__09228.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\k\fanyuan_1500536463__37570.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\k\netum_1500536865__81188.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\k\t- toff_1500537174__03393.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\l\ashanks_1500536307__08673.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\l\eleaf_1500536458__60038.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\l\teclast_1500537188__41901.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\m\kingfast_1500536675__80683.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\n\jarown_1500536619__32357.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\n\onda_1500536910__90208.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\n\rodaful_1500536989__87776.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\o\ootdty_1500536916__28850.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\p\baby_1500536313__66203.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\p\heroyu_1500536504__31837.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\p\yuntab_1500537250__26986.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\p\za_1500537257__84966.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\r\common good_1500536421__79773.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\r\neewer_1500536857__09266.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\s\bloom_1500536325__65694.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\s\johncoo_1500536653__97842.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\s\ofs_1500536901__90412.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\s\s skyee_1500537006__19173.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\t\mythic age_1500536852__22139.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\t\sagaform_1500537014__04542.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\u\gdgydh_1500536464__57892.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\u\oxa_1500536923__73696.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\u\queenplus_1500536950__16023.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\u\shinning home_1500537024__85608.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\v\jintoho_1500536634__85686.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\v\pgm_1500536931__57439.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\v\vktech_1500537231__40966.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\w\jonnafe_1500536660__06553.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\w\katelvadi gnafilniqil_1500536668__12687.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\w\mother nest_1500536775__01806.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\w\rv77_1500536998__55821.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\w\vakind_1500537223__78110.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\w\vv_1500537216__93912.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\x\bumlon_1500536355__36576.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\x\leory_1500536686__92013.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\x\londisk_1500536697__94695.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\x\maange_1500536720__32334.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\x\wikoode_1500537238__65661.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\y\dr.qiiwi_1500536422__52378.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\y\homgeek_1500536507__49126.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\y\meloision_1500536746__49353.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\y\svbony_1500537148__43147.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\z\buyincoins_1500536364__92486.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\z\dreamshining_1500536433__08846.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\a\skonhed_1500537029__49726.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\b\bluedio_1500536354__53632.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\b\headwear_1500536476__15682.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\b\ingelon_1500536618__15850.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\b\yayi jewelryfine_1500537244__28084.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\c\huawei_1500536597__89404.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\d\deek - robot_1500536422__09651.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\d\surom_1500537038__83727.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\d\tbj_1500537182__16122.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\e\chanleevi_1500536420__58359.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\e\pixlink_1500536937__44019.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\e\rcyago_1500536972__07414.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\f\by nanda_1500536376__08405.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\f\imice_1500536600__48205.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\g\binful_1500536321__98706.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\h\jepod_1500536626__52226.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\h\jisoncase_1500536647__37507.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\h\tomy day_1500537201__82859.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\i\celadon_1500536385__42712.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\i\luggage_1500536713__74244.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\i\mocute_1500536769__37090.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\i\podofo_1500536943__53459.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\i\rockcow_1500536980__70821.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\i\switautoid_1500537159__01278.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\j\mercury_1500536761__13845.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\j\muchuan_1500537346__15475.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\j\szvivid_1500537169__90603.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\j\tivdio_1500537195__09228.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\k\fanyuan_1500536463__37570.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\k\netum_1500536865__81188.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\k\t- toff_1500537174__03393.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\l\ashanks_1500536307__08673.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\l\eleaf_1500536458__60038.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\l\teclast_1500537188__41901.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\m\kingfast_1500536675__80683.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\n\jarown_1500536619__32357.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\n\onda_1500536910__90208.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\n\rodaful_1500536989__87776.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\o\ootdty_1500536916__28850.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\p\baby_1500536313__66203.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\p\heroyu_1500536504__31837.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\p\yuntab_1500537250__26986.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\p\za_1500537257__84966.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\r\common good_1500536421__79773.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\r\neewer_1500536857__09266.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\s\bloom_1500536325__65694.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\s\johncoo_1500536653__97842.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\s\ofs_1500536901__90412.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\s\s skyee_1500537006__19173.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\t\mythic age_1500536852__22139.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\t\sagaform_1500537014__04542.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\u\gdgydh_1500536464__57892.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\u\oxa_1500536923__73696.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\u\queenplus_1500536950__16023.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\u\shinning home_1500537024__85608.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\u\universal_1500537210__58725.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\v\jintoho_1500536634__85686.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\v\pgm_1500536931__57439.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\v\vktech_1500537231__40966.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\w\jonnafe_1500536660__06553.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\w\katelvadi gnafilniqil_1500536668__12687.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\w\mother nest_1500536775__01806.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\w\rv77_1500536998__55821.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\w\vakind_1500537223__78110.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\w\vv_1500537216__93912.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\x\bumlon_1500536355__36576.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\x\leory_1500536686__92013.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\x\londisk_1500536697__94695.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\x\maange_1500536720__32334.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\x\wikoode_1500537238__65661.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\y\dr.qiiwi_1500536422__52378.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\y\homgeek_1500536507__49126.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\y\meloision_1500536746__49353.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\y\svbony_1500537148__43147.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\z\buyincoins_1500536364__92486.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\z\dreamshining_1500536433__08846.original.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\product_images\demo-logo_1499931578__88449.png" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\product_images\theme_images\slide01-notext__479539c3c.jpg" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\product_images\theme_images\slide02-notext__083529c3c.jpg" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\product_images\theme_images\slide03-notext9c3c.jpg" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\stencil\c77cd3e0-5e57-0135-453f-525400dfdca6\e\cb5cc800-a5b3-0135-5494-525400970412\css\theme.css" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\stencil\c77cd3e0-5e57-0135-453f-525400dfdca6\e\cb5cc800-a5b3-0135-5494-525400970412\dist\theme-bundle.main.js" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\stencil\c77cd3e0-5e57-0135-453f-525400dfdca6\e\cb5cc800-a5b3-0135-5494-525400970412\img\product-loading.gif" />
+    <Content Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\stencil\c77cd3e0-5e57-0135-453f-525400dfdca6\e\cb5cc800-a5b3-0135-5494-525400970412\modernizr-custom.js" />
+    <Content Include="cdn4.bigcommerce.com\r-f6aaf3462fdfeac2f4adca6b61526eb3ec93a5ac\javascript\braintree96d2.js" />
+    <Content Include="cdn4.bigcommerce.com\r-f6aaf3462fdfeac2f4adca6b61526eb3ec93a5ac\javascript\jirafe\beacon_api.js" />
+    <Content Include="cdn4.bigcommerce.com\r-f6aaf3462fdfeac2f4adca6b61526eb3ec93a5ac\javascript\visitor_stencil96d2.js" />
+    <Content Include="cdn4.bigcommerce.com\r-f6aaf3462fdfeac2f4adca6b61526eb3ec93a5ac\vendor\bower_components\braintree-web\index96d2.js" />
+    <Content Include="cdn4.bigcommerce.com\r-f6aaf3462fdfeac2f4adca6b61526eb3ec93a5ac\vendor\bower_components\form-poster\dist\form-poster.min96d2.js" />
+    <Content Include="cdn4.bigcommerce.com\r-f6aaf3462fdfeac2f4adca6b61526eb3ec93a5ac\vendor\bower_components\paypal-checkout\dist\checkout96d2.js" />
+    <Content Include="checkout.aspx" />
+    <Content Include="contact-us-message.aspx" />
+    <Content Include="contact-us.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="s7.addthis.com\js\300\addthis_widget.js" />
+    <Content Include="shipping-returns.aspx" />
+    <Content Include="single-product.aspx" />
+    <Content Include="subscribe.aspx" />
+    <Content Include="thankyou.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="account_settings.aspx.cs">
+      <DependentUpon>account_settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account_settings.aspx.designer.cs">
+      <DependentUpon>account_settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\account_settings.aspx.cs">
+      <DependentUpon>account_settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\account_settings.aspx.designer.cs">
+      <DependentUpon>account_settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdminAccount.Master.cs">
+      <DependentUpon>AdminAccount.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AdminAccount.Master.designer.cs">
+      <DependentUpon>AdminAccount.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\canceledorder.aspx.cs">
+      <DependentUpon>canceledorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\canceledorder.aspx.designer.cs">
+      <DependentUpon>canceledorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\categories.aspx.cs">
+      <DependentUpon>categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\categories.aspx.designer.cs">
+      <DependentUpon>categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\category_add.aspx.cs">
+      <DependentUpon>category_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\category_add.aspx.designer.cs">
+      <DependentUpon>category_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\category_delete.aspx.cs">
+      <DependentUpon>category_delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\category_delete.aspx.designer.cs">
+      <DependentUpon>category_delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\category_update.aspx.cs">
+      <DependentUpon>category_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\category_update.aspx.designer.cs">
+      <DependentUpon>category_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\orders.aspx.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\orders.aspx.designer.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\product_add.aspx.cs">
+      <DependentUpon>product_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\product_add.aspx.designer.cs">
+      <DependentUpon>product_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\product_delete.aspx.cs">
+      <DependentUpon>product_delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\product_delete.aspx.designer.cs">
+      <DependentUpon>product_delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\product_edit.aspx.cs">
+      <DependentUpon>product_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\product_edit.aspx.designer.cs">
+      <DependentUpon>product_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\single_order.aspx.cs">
+      <DependentUpon>single_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\single_order.aspx.designer.cs">
+      <DependentUpon>single_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\single_user_view.aspx.cs">
+      <DependentUpon>single_user_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\single_user_view.aspx.designer.cs">
+      <DependentUpon>single_user_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\userinfo.aspx.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\userinfo.aspx.designer.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.Master.cs">
+      <DependentUpon>Checkout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.Master.designer.cs">
+      <DependentUpon>Checkout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="contact-us-message.aspx.cs">
+      <DependentUpon>contact-us-message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact-us-message.aspx.designer.cs">
+      <DependentUpon>contact-us-message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact-us.aspx.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact-us.aspx.designer.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.Master.cs">
+      <DependentUpon>HomePage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.Master.designer.cs">
+      <DependentUpon>HomePage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisteredUserHomePage.Master.cs">
+      <DependentUpon>RegisteredUserHomePage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisteredUserHomePage.Master.designer.cs">
+      <DependentUpon>RegisteredUserHomePage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RegisteredUserSite.Master.cs">
+      <DependentUpon>RegisteredUserSite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisteredUserSite.Master.designer.cs">
+      <DependentUpon>RegisteredUserSite.Master</DependentUpon>
+    </Compile>
+    <Compile Include="shipping-returns.aspx.cs">
+      <DependentUpon>shipping-returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shipping-returns.aspx.designer.cs">
+      <DependentUpon>shipping-returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="single-product.aspx.cs">
+      <DependentUpon>single-product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="single-product.aspx.designer.cs">
+      <DependentUpon>single-product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="subscribe.aspx.cs">
+      <DependentUpon>subscribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subscribe.aspx.designer.cs">
+      <DependentUpon>subscribe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thankyou.aspx.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thankyou.aspx.designer.cs">
+      <DependentUpon>thankyou.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HomePage.Master" />
+    <Content Include="Site.Master" />
+    <Content Include="RegisteredUserSite.Master" />
+    <Content Include="RegisteredUserHomePage.Master" />
+    <Content Include="admin\Admin.Master" />
+    <Content Include="admin\AdminAccount.Master" />
+    <Content Include="Checkout.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\100x100\products\122\608\" />
+    <Folder Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\1280x1280\products\" />
+    <Folder Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\300x300\products\" />
+    <Folder Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\350x350\products\" />
+    <Folder Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\images\stencil\608x608\products\" />
+    <Folder Include="cdn3.bigcommerce.com\s-qe5r4ejjcw\products\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2332</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2205/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

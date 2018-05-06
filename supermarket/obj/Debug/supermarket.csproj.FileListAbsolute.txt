@@ -1,0 +1,14 @@
+E:\Brainware PGD-SE Project\supermarket\supermarket\bin\supermarket.dll
+E:\Brainware PGD-SE Project\supermarket\supermarket\bin\supermarket.pdb
+E:\Brainware PGD-SE Project\supermarket\supermarket\obj\Debug\supermarket.dll
+E:\Brainware PGD-SE Project\supermarket\supermarket\obj\Debug\supermarket.pdb
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\bin\supermarket.dll
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\bin\supermarket.pdb
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\obj\Debug\supermarket.dll
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\obj\Debug\supermarket.pdb
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\obj\Debug\supermarket.csprojResolveAssemblyReference.cache
+G:\Brainware PGD-SE Project\supermarket\supermarket\bin\supermarket.dll
+G:\Brainware PGD-SE Project\supermarket\supermarket\bin\supermarket.pdb
+G:\Brainware PGD-SE Project\supermarket\supermarket\obj\Debug\supermarket.csprojResolveAssemblyReference.cache
+G:\Brainware PGD-SE Project\supermarket\supermarket\obj\Debug\supermarket.dll
+G:\Brainware PGD-SE Project\supermarket\supermarket\obj\Debug\supermarket.pdb

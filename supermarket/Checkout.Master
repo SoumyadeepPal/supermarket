@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Checkout.master.cs" Inherits="supermarket.Checkout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+
+    <title>Supermarket</title>
+
+    <link href="https://cdn7.bigcommerce.com/r-9b3b05a21b6706e7c1ab10ea90788109060d82ae/img/bc_favicon.ico" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="https://cdn7.bigcommerce.com/shared/css/open_sans-12bc75a4e63c4678d6184b4e0d680e14a090bc33.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn7.bigcommerce.com/shared/bower/ng-checkout/dist/css/ng-checkout.min-9ce90ee40437024d9f914a1de5ef9c29afebc760.css" rel="stylesheet" type="text/css" />
+    <link data-stencil-stylesheet="" href="https://cdn7.bigcommerce.com/s-qe5r4ejjcw/stencil/fb9e2a00-0458-0136-f551-525400dfdca6/e/cb5cc800-a5b3-0135-5494-525400970412/css/optimized-checkout-2df603f0-0470-0136-f458-525400dfdca6.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:700" rel="stylesheet" />
+
+    <script type="text/javascript">
+        window.language = { "locale": "en", "locales": {}, "translations": {} };
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="checkoutHeader optimizedCheckout-header">
+                <div class="checkoutHeader-content">
+                    <h1 class="is-srOnly">Checkout</h1>
+                    <h2 class="checkoutHeader-heading">
+                        <a class="checkoutHeader-link" href="Default.aspx">
+                            <span class="header-logo-text">Supermarket</span>
+                        </a>
+                    </h2>
+                </div>
+            </header>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+        </div>
+    </form>
+</body>
+
+</html>

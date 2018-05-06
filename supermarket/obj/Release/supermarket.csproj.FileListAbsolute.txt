@@ -1,0 +1,5 @@
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\bin\supermarket.dll
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\bin\supermarket.pdb
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\obj\Release\supermarket.csprojResolveAssemblyReference.cache
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\obj\Release\supermarket.dll
+C:\Users\Soumyadeep Pal\Documents\Visual Studio 2012\Projects\supermarket\supermarket\obj\Release\supermarket.pdb
